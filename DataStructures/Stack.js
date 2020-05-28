@@ -26,6 +26,14 @@ class Stack {
   isEmpty() {
     return this.top === null;
   }
+  logElems() {
+    let n = this.top;
+    console.log(n.data);
+    while (n.next) {
+      console.log(n.next.data);
+      n = n.next;
+    }
+  }
 }
 
 const stack = new Stack();
