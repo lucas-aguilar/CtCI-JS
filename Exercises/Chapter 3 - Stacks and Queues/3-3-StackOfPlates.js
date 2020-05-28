@@ -47,6 +47,7 @@ class Stack {
     }
   }
 }
+
 class PlatesStack {
   constructor(stackMax = 10) {
     this.stackMax = stackMax;
@@ -72,8 +73,8 @@ class PlatesStack {
     }
     return data;
   }
-  logStacks() {
-    console.log('this.stacks');
+  logStacksArray() {
+    console.log('Stacks array:');
     console.log(this.stacks);
   }
   logElems() {
