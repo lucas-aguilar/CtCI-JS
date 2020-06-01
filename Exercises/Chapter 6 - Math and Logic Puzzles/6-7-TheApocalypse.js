@@ -2,9 +2,9 @@ function simulateRegularBirth(
   families = DEFAULT_FAMILIES,
   avgPerFamily = DEFAULT_AVG_KIDS
 ) {
-  let boys = 0;
-  let girls = 0;
-  let kids;
+  let boys = 0,
+    girls = 0,
+    kids;
   for (let qty = 0; qty < families; qty++) {
     kids = 0;
     while (kids < avgPerFamily) {
@@ -20,8 +20,8 @@ function simulateRegularBirth(
 }
 
 function simulateBirthPolicy(families = DEFAULT_FAMILIES) {
-  let boys = 0;
-  let girls = 0;
+  let boys = 0,
+    girls = 0;
   for (let qty = 0; qty < families; qty++) {
     while (getRandomBool()) boys++;
     girls++;
@@ -41,5 +41,6 @@ var DEFAULT_AVG_KIDS = 2;
 
 console.log('BirthPolicy:');
 console.log(simulateBirthPolicy());
+
 console.log('RegularBirth:');
 console.log(simulateRegularBirth());
