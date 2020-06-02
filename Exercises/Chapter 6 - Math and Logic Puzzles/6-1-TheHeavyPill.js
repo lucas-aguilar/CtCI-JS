@@ -20,4 +20,4 @@ function findBottle(arr) {
 
 const res = findBottle(bottles);
 
-console.log(res);
+console.log(`Index: ${res}`);
